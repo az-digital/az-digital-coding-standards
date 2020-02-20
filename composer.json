@@ -1,0 +1,48 @@
+{
+    "name": "az-digital/coding-standards",
+    "type": "phpcodesniffer-standard",
+    "description": "PHP_CodeSniffer rules (sniffs) for Arizona Digital coding standards",
+    "keywords": [
+        "Drupal",
+        "phpcs",
+        "standards"
+    ],
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Arizona Digital",
+            "homepage": "https://digital.arizona.edu",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/coder": "^8.3",
+        "pheromone/phpcs-security-audit": "^2.0",
+        "phpcompatibility/php-compatibility": "^9.0",
+        "slevomat/coding-standard": "^5.0",
+        "squizlabs/php_codesniffer": "^3"
+    },
+    "suggest": {
+        "brainmaestro/composer-git-hooks": "Easily manage Git hooks in your composer config.",
+        "dealerdirect/phpcodesniffer-composer-installer": "Automatically install PHP_CodeSniffer coding standards (rulesets)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Acquia\\CodingStandards\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "issues": "https://github.com/az-digital/coding-standards/issues",
+        "source": "https://github.com/az-digital/coding-standards"
+    }
+}
